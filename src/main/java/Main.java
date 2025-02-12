@@ -8,6 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
 
+
         //The invalid command loop
         /*while (!input.matches("")) {
             System.out.println(input + ": command not found");
@@ -20,8 +21,11 @@ public class Main {
         while (!input.matches("")) {
 
             if(input.equals("exit 0")) {
-                //scanner.close();
                 break;
+            } else if (input.startsWith("echo")) {
+                System.out.println(input.substring(5));
+                System.out.print("$ ");
+                input = scanner.nextLine();
             }
             else {
                 System.out.println(input + ": command not found");
@@ -30,6 +34,7 @@ public class Main {
             }
 
         }
+
     }
 
 }
