@@ -23,11 +23,6 @@ public class Main {
                 break;
             } else if (input.startsWith("echo")) {
                 System.out.println(input.substring(5));
-<<<<<<< HEAD
-=======
-                System.out.print("$ ");
-                input = scanner.nextLine();
->>>>>>> 9264ce8c19bf091c1cb1319eaf365c27a40dc08c
             }
             else {
                 System.out.println(input + ": command not found");
