@@ -19,12 +19,13 @@ public class Main {
         //The exit command
         while (!input.matches("")) {
 
-            if(input.equals("0")) {
-                scanner.close();
+            if(input.equals("exit 0")) {
+                //scanner.close();
+                break;
             }
             else {
                 System.out.println(input + ": command not found");
-                System.out.print("$ exit ");
+                System.out.print("$ ");
                 input = scanner.nextLine();
             }
 
